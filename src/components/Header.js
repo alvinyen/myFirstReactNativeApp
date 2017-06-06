@@ -1,10 +1,17 @@
 import React from 'react';
 import { Text } from 'react-native';
 
+const styles = {
+  textStyle: {
+    fontSize: 20,
+  },
+};
+
 const Header = (props) => {
   const { headerText } = props;
+  const textStyle = styles;
   return (
-    <Text>{headerText}</Text>
+    <Text style={textStyle}>{headerText}</Text>
   );
 };
 
